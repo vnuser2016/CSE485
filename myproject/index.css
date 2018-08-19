@@ -3,6 +3,7 @@ body {
 }
 
 .top {
+    position: relative;
     width: 100%;
     height: auto;
     z-index: 1;
@@ -31,6 +32,19 @@ body {
     position: fixed;
     top: 8px;
     right: 16px;
+}
+
+#top-right a {
+    padding: 10px;
+    border: 0ch;
+    text-decoration: none;
+    font-size: 20px;
+    color: aliceblue;
+    border: 2px solid white;
+}
+
+#top-right a :hover {
+    color: brown;
 }
 
 .top button {
@@ -101,4 +115,9 @@ body {
 #left #baiviet {
     width: auto;
     height: auto;
+}
+
+#left h1,
+h3 {
+    margin-top: 10px;
 }

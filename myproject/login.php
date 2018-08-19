@@ -1,10 +1,4 @@
 <!DOCTYPE html>
-<?php session_start(); 
-if(isset($_SESSION["username"]))
-{
-    header('location:user.php');
-}
-?>
 <html>
 
 <head>
@@ -19,39 +13,13 @@ if(isset($_SESSION["username"]))
     <form class="loginform" action="dangnhap.php" method="POST">
         <p><strong>Welcome to my blog</strong></p>
         <div class="loginform">
-
             <label for="uname"><b>Username</b></label>
             <input type="text" placeholder="Enter your email" name="uname">
-
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="pass">
-
-            <button type="submit" name="login"> Đăng nhập </button>
-            <button type="button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Đăng kí thành viên</button>
-
-            <div id="id01" class="modal">
-                <form class="modal-content" action="register.php">
-                    <div class="container">
-                        <h1>Đăng kí thành viên</h1>
-                        <hr>
-                        <label for="email"><b>username</b></label>
-                        <input type="email" placeholder="Enter Email" name="email">
-
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw">
-
-                        <label for="psw-repeat"><b>Repeat Password</b></label>
-                        <input type="password" placeholder="Repeat Password" name="psw-repeat">
-
-                        <label for="name"><b>Họ và tên</b></label>
-                        <input type="text" placeholder="Nhập vào họ tên đầy đủ của bạn" name="hovaten">
-                        <div class="clearfix">
-                            <button type="submit" class="signupbtn">Đăng kí</button>
-                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+            <button type="submit" name="login">Đăng nhập </button>
+            <button type="button" name="cancle" onclick="register()">Đăng ký</button>
+</form>
             <script src="login.js"></script>
 </body>
 

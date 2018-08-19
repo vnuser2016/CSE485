@@ -2,8 +2,8 @@
     include 'header.php';
 ?>
 <form action="">
-    <p>nhập vào tên môn học:</p>
-    <input type="text" id="subjectname" name="subjectname">
+    <p>hãy chọn kiểu mà bạn muốn nhập vào</p>
+    <input type="checkbox" id="subjectname" name="subjectname">
     <p>Nhập vào mã môn học</p>
     <input type="text" id="mamonhoc" name="subjectname">
     <p>Nội dung</p>

@@ -1,8 +1,7 @@
-var modal = document.getElementById('id01');
+function register() {
+    window.location = "register.php";
+}
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+function cancel() {
+    window.location = "index.php";
 }
